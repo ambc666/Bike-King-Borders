@@ -1,0 +1,209 @@
+*{
+    box-sizing: content-box; /*This is my standard accross all browsers*/
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+.logo-main{  /*This is my logo top left*/
+    margin-top: 20px;
+    margin-left: 50px;
+}
+h1{ /*BKB Text*/
+    font-family: "Palatino Linotype", serif;
+    color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute; top: 40px; right: 30px; width: 600px;
+    text-align: right;
+    text-shadow: 2px 2px #A09C9C;
+}
+h2{ /*Headings*/
+    background-color: #b19172;
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.homepageimg{ /*Bike image on homepage*/
+    width: 75%;
+    margin-left: 15%;
+    border: 2px solid #fff;
+}
+.bg-1{ /* Row 1 */
+    background-color: #b19172;
+    color: #000;
+    margin-top: 4em;
+    padding-bottom: 3em;
+    border: 2px solid #fff;
+}
+.btn{ /*Registration Button*/
+    margin-top: 2%;
+    width: 200px;
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.bg-2{ /* Row 2 */
+    background-color: #b19172;
+    color: #000;
+    margin-top: 4em;
+    padding-bottom: 3em;
+    border: 2px solid #fff;
+}
+.text{ /*paragraphs on the homepage*/
+    background-color: #b19172;
+}
+.navbar-default .navbar-nav>li>a{ /*Navigation*/
+    color: #000;
+    background-color: #B19172;
+    border: 2px solid #fff;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    text-align: center;
+}
+.navbar-default{    
+    border-color: #333333;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: #000;
+    background-color: #DDDBF7;
+}
+.container-fluid{/*Moves nav bar out from the right a little*/
+    padding-right: 2em;
+}
+.backform{ /*Form background*/
+    background-color: #b19172; 
+}
+.form-group{
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: #b19172;
+}
+.servicelists{/*Styling for list boxes in service page*/
+    list-style-position: inside;
+    text-align: left;   
+}
+.listtext{/*Text for service page*/
+    background-color: #b19172;
+}
+.shopimg{/*Images for shop page styles*/
+    width: 256px;
+    height: 256px;
+    margin-top: 1em;
+}
+.shoptext{/*Shop page info - This is separate so I can add a margin*/
+    margin-top: 2em;
+    background-color: #b19172;
+    
+}
+.shoplists{/*Same as serive but separate incase I change the style*/ 
+    list-style-position: inside;
+    text-align: left;   
+}
+.featurestext{/*Used for "features"*/
+    background-color: #b19172;
+    font-weight: 900;
+}
+.carousel-indicators{/*Makes the bar at bottom of gallery almost transparent*/
+    background-color: rgba(0,0,0,.6);
+}
+embed{/*Youtube video*/
+    width: 854px;
+    height: 480px;
+    border: 3px solid #fff;
+}
+.bikeimg{/*Bike images for hire page*/
+    height: 256px;
+    width: 256px;
+    border: 1px solid #fff;
+    background-color: #b19172;
+    margin: 0.2em;
+}
+.bg-3{ /*This is the footer*/
+    background-color: #b19172;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    border: 2px solid #fff;
+}
+.footertext{
+    text-align: center;
+    background-color: #b19172;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+.socialicons{ /*Icons in the footer*/
+    width: 4%;
+    position: relative;
+    bottom: 2em;
+    float: right;
+    border: 1px solid #fff;
+    margin: 0.1em;
+}
+.w3c{
+    position: relative;
+    bottom: 1.5em;
+    float: left;
+    background-color: #b19172;
+    border: 1px solid #fff;
+    width: 88px;
+    height: 31px;
+}
+@media screen and (max-width: 950px) { /*Media query due to breakpoints*/
+.navbar-default .navbar-nav>li>a{/*Nav bar breaks just under this due to font size*/
+    color: #000;
+    background-color: #B19172;
+    border: 1px solid #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "EB Garamond", serif;
+}
+h1{ /*This needs to wrap or covers logo*/
+    font-family: "Palatino Linotype", serif;
+    color: #fff;
+    font-size: 5em;
+    font-weight: 500;
+    position: absolute; top: 0px; right: 20px; width: 310px;
+    text-align: right;
+    text-shadow: 2px 2px #A09C9C;
+}
+.container-fluid{/*Without this the nav bar wraps*/
+    padding-right: 1em;
+}
+}
+@media screen and (max-width: 768px) {/*Tablet Landscape/Desktop media query*/
+.logo-main{ /*Logo moved back to the left due to visual issues*/
+    margin-top: 20px;
+    margin-left: 0px; 
+} 
+.socialicons{ /*Icons resize and are moved*/
+    width: 8%;
+    position: relative;
+    bottom: 0.2em;
+    float: none;
+}
+.w3c{
+    bottom: 3em;
+    float: right;
+}
+}
+@media screen and (max-width: 500px){/*Mobile phone media query - 20px more due to logo issues*/
+h1{/*Logo is made invisible due to overlap*/
+   visibility: hidden;     
+}
+.socialicons{ /*Icons resize so are clickable*/
+    width: 15%;
+    position: relative;
+    bottom: 0.2em;
+    float: none;
+}
+.w3c{
+    bottom: 3em;
+    float: right;
+}
+}
